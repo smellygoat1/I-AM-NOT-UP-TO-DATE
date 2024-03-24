@@ -1,0 +1,73 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "yarn install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "docusaurus": {
+      "name": "docusaurus",
+      "command": "yarn docusaurus"
+    },
+    "WiglSwizzle": {
+      "name": "WiglSwizzle", 
+      "command": "yarn swizzle"
+    }, 
+    "start": {
+      "name": "start",
+      "command": "yarn start"
+    },
+    "build": {
+      "name": "build",
+      "command": "yarn build"
+    },
+    "swizzle": {
+      "name": "swizzle",
+      "command": "yarn swizzle"
+    },
+    "deploy": {
+      "name": "deploy",
+      "command": "yarn deploy"
+    },
+    "clear": {
+      "name": "clear",
+      "command": "yarn clear"
+    },
+    "serve": {
+      "name": "serve",
+      "command": "yarn serve"
+    },
+    "write-translations": {
+      "name": "write-translations",
+      "command": "yarn write-translations"
+    },
+    "write-heading-ids": {
+      "name": "write-heading-ids",
+      "command": "yarn write-heading-ids"
+    },
+    "typecheck": {
+      "name": "typecheck",
+      "command": "yarn typecheck"
+    },
+    "dev": {
+      "name": "dev",
+      "command": "yarn dev",
+      "runAtStart": true,
+      "preview": {
+        "port": 3000
+      }
+    },
+    "yarn run start": {
+      "name": "dev",
+      "command": "yarn run start"
+    },
+    "yarn run": {
+      "name": "yarn run",
+      "command": "yarn run"
+    }
+  }
+}
